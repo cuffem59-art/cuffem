@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUFFEM - fat ugly mf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="entry-screen" class="entry-screen">
+        <div class="entry-content">
+            <h1 class="entry-title">CUFFEM</h1>
+            <button id="enter-btn" class="enter-btn">CLICK TO ENTER</button>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container" id="main-content">
+        <div class="volume-control">
+            <svg class="volume-icon" viewBox="0 0 24 24" fill="white" width="20" height="20">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+            </svg>
+            <input type="range" id="volume-slider" min="0" max="100" value="50">
+        </div>
+
+        <header class="hero">
+            <div class="hero-content">
+                <h1>CUFFEM</h1>
+                <p class="subtitle">the greatest streamer in 2026</p>
+            </div>
+            <div class="scroll-indicator">
+                <p>scroll to see more</p>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </header>
+
+        <section class="mugshot-section">
+            <h2>my fav photo</h2>
+            <div class="mugshot-container">
+                <div class="mugshot-frame">
+                    <img src="images/mugshot.jpg" alt="Cuffem Mugshot" class="mugshot-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <div class="content-block">
+                <h2>GALLERY</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="images/1.jpg" alt="cuffem">
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/2.jpg" alt="cuffem">
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/3.jpg" alt="cuffem">
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/4.jpg" alt="cuffem">
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/5.jpg" alt="cuffem">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block stats-block">
+                <h2>STATS</h2>
+                <div class="stat-row">
+                    <span class="stat-label">kick followers:</span>
+                    <span class="stat-value" data-target="185000">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">calories per stream:</span>
+                    <span class="stat-value" data-target="10000">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">lean sips this year:</span>
+                    <span class="stat-value" data-target="2400">0</span>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>SOCIALS</h2>
+                <div class="links">
+                    <a href="https://kick.com/cuffem" target="_blank">KICK</a>
+                    <a href="https://twitter.com/cuffem" target="_blank">TWITTER</a>
+                    <a href="https://instagram.com/cuffem" target="_blank">INSTAGRAM</a>
+                    <a href="https://youtube.com/@cuffem" target="_blank">YOUTUBE</a>
+                    <a href="https://tiktok.com/@cuffem" target="_blank">TIKTOK</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>cuffem.xyz</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
